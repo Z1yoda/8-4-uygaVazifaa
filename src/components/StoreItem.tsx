@@ -23,7 +23,6 @@ export function StoreItem({ id, name, price }: StoreItemProps) {
 
     const quantity = getItemQuantity(id);
 
-    // Set image source based on item ID
     const getImageSrc = (itemId: number) => {
         switch (itemId) {
             case 1:
@@ -35,7 +34,7 @@ export function StoreItem({ id, name, price }: StoreItemProps) {
             case 4:
                 return car;
             default:
-                return ""; // Provide a default value or handle the case where no image is found
+                return ""; 
         }
     };
 
